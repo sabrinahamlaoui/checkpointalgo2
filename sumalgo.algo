@@ -1,0 +1,55 @@
+ALGORITHM sum_des_elements_distincts
+//probleme 1 somme des elements distincts
+VAR
+    Tab_1 : ARRAY_OF INTEGER [20];
+    Tab_2 : ARRAY_OF INTEGER [20];
+    i,j : INTEGER :=0
+    sum : INTEGER :=0
+BEGIN
+    read ("Entrez les elements du tableau1": Tab_1 );
+    read ("Entrez les elements du tableau1": Tab_2 );
+    for i=0 to Tab_1.length , i++ ;
+    for j=0 to Tab_2.length , j++ ;
+    if Tab_1[i] <> Tab_2[j] ;
+    sum := sum + Tab_1[i] ;
+    end if ;
+    end for ;
+    end for ;
+
+    for j=0 to Tab_2.length , j++ ;
+    for i=0 to Tab_1.length , i++ ;
+    if Tab_2[j] <> Tab_[i] ;
+    sum :=sum +Tab_2[j] ;
+    end if;
+    end for ;
+    end for ;
+    write ("la somme des elements distincts est" : sum);
+END
+
+// probleme 2 overllated elements
+ALGORITHM overllated_elements
+
+VAR
+    Arr_1  : ARRAY_OF INTEGER[20];
+    Arr_2  : ARRAY_OF INTEGER [20];
+    k : INTEGER := 0 ;
+    l :INTEGER := 0 ;
+    somme : INTEGER := 0 ;
+BEGIN
+    for k =0 to Arr_1.length , k++ ;
+    for l =0 to Arr_2.length , l++ ;
+    if Arr_1[k]= Arr_2[l] ;
+    somme := somme + Arr_1[k]
+    end if;
+    end for;
+    end for;
+    
+    for l =0 to Arr_2.length , l++ ;
+    for k =0 to Arr_1.length , k++ ;
+    if Arr_2[l]= Arr_1[k] ;
+    somme := somme + Arr_2[l] ;
+    end if;
+    end for;
+    end for ;
+    write ("la somme est", : somme);
+END
