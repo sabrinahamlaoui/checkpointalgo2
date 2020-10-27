@@ -8,22 +8,28 @@ VAR
 BEGIN
     read ("Entrez les elements du tableau1": Tab_1 );
     read ("Entrez les elements du tableau1": Tab_2 );
-    for i=0 to Tab_1.length , i++ ;
-    for j=0 to Tab_2.length , j++ ;
-    if Tab_1[i] <> Tab_2[j] ;
-    sum := sum + Tab_1[i] ;
-    end if ;
-    end for ;
-    end for ;
+    FOR i=0 to Tab_1.length , i++ ;
+    FOR j=0 to Tab_2.length , j++ ;
+    i IF (Tab_1[i]==Tab_2[j]) THEN
+    est := false
+    break;
+    END_IF
+    END_FOR
+    IF (test) THEN
+    sum:=sum+arr1[i]
+    END_FOR ;
 
-    for j=0 to Tab_2.length , j++ ;
-    for i=0 to Tab_1.length , i++ ;
-    if Tab_2[j] <> Tab_[i] ;
-    sum :=sum +Tab_2[j] ;
-    end if;
-    end for ;
-    end for ;
-    write ("la somme des elements distincts est" : sum);
+
+    FOR j=0 to Tab_2.length , j++ ;
+    FOR i=0 to Tab_1.length , i++ ;
+    IF (arr1[i]==arr2[j]) THEN
+    test := false
+    break;
+    END_IF
+    END_FOR
+    IF (test) THEN
+    sum:=sum+arr1[i]
+    END_FOR
 END
 
 // probleme 2 overllated elements
